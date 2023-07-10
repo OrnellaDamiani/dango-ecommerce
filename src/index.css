@@ -1,13 +1,11 @@
-@import "./components/Navbar/Navbar.css"
+@import "./components/Button/Button.css";
+@import "./components/CartWidget/CartWidget.css";
+@import "./components/ItemListContainer/ItemListContainer.css";
+@import "./components/Navbar/Navbar.css";
 
-
-
-
-
-
-
-
-
+body {
+  margin: 0;
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
