@@ -1,11 +1,11 @@
 const CartWidget = () => {
     return (
-        <>
-            <img src="src/img/cart.png" />
+        <div className="cart-widget">
+            <img src="src/img/cart2.png" />
             <div>
                 <p>3</p>
             </div>
-        </>
+        </div>
 
     )
 }
