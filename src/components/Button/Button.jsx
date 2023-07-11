@@ -10,3 +10,4 @@ const Button = ({ color, texto, accion, className }) => {
 }
 
 export default Button;
+
