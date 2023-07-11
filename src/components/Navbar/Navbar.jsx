@@ -27,28 +27,3 @@ const Navbar = () => {
 }  
 
 export default Navbar;
-{/* <body>
-    <header class="header">
-        <div class="logo">
-            <img src="../img/logo.png" alt="logo" />
-        </div>
-        <nav class="navbar">
-            <ul class="menu">
-                <Button texto="inicio" className="navbar-button">Inicio</Button>
-                <Button texto="anime" className="navbar-button">Anime</Button>
-                <Button texto="manga" className="navbar-button">Manga</Button>
-                <Button texto="manga" className="navbar-button">Contacto</Button>
-
-            </ul>
-
-        </nav>
-        
-        <div class="cart-widget">
-            <img src="../img/cart2.png" class="img"/>
-            <div>
-                <p>3</p>
-            </div>
-        </div>
-
-    </header>
-</body> */}
