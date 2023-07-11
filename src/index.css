@@ -3,8 +3,12 @@
 @import "./components/ItemListContainer/ItemListContainer.css";
 @import "./components/Navbar/Navbar.css";
 
+
 body {
   margin: 0;
+}
+* :root {
+  background: #EEB7D1;
 }
 
 /* :root {
@@ -75,4 +79,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}  */

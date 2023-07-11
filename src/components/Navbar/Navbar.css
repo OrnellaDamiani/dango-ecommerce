@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #D3D596;
 }
 
 .navbar .logo img {
@@ -16,5 +17,10 @@
     padding: 5px 10px;
     margin: 0 5px;
     border-radius: 5px;
-    background-color: pink;
+    background-color: #EEB7D1;
+    color: #52600A;
+}
+.navbar-button:hover {
+    opacity: 8;
+    color:#CB7287;
 }
