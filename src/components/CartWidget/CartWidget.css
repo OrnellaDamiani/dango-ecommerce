@@ -1,12 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,400&display=swap');
+
+
 .cart-widget {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    border: none;
+    background:#EEB7D1 ;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
 }
 
 .cart-widget img {
     width: auto;
-    height: 30px;
+    height: 20px;
     margin-right: 10px;
+    transform: scale(1.2);
 }
+
+.cart-widget img:hover {
+    transform: scale(1.2);
+}
+
+p:hover {
+    background-color:#EEB7D1;
+    color: #CB7287;
+    transform: scale(1.1);
+}
+
+p {
+    display: inline-block;
+    color: #52600A;
+    font-weight: 700;
+    font-size: 15px;
+} 
+
+
+  /* .img {
+    height: 20px;
+    float: left;
+    margin: auto;
+    margin-right: 8px;
+  } */
 
   
