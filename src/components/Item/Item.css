@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,400&display=swap');
 
 .product-box {
     width: 20px;
     margin: 5px; 
-   display: flex;
-   padding: 10px;
+   display:flex;
+   padding: 20px;
+   background-color: black;
 }
 
-img {
+.product-img {
     width: 20px;
     height: 20px;
 }

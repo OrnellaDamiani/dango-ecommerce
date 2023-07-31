@@ -1,20 +1,21 @@
 import React from 'react';
 import Button from '../Button/Button'
 import CartWidget from '../CartWidget/CartWidget';
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navegate = useNavigate ()
     return (
         <body>
             <header class="header">
-            <div className='logo' as={NavLink} to='/'>
+            <div className='logo' onClick={()=>navegate(`/`)}>
                 <img src='src/img/logo.png' />
             </div>
         <nav className='navbar'>
             <div className='menu'>
-                <Button texto="inicio" className="navbar-button"  as={NavLink} to='/' />
-                <Button texto="anime" className="navbar-button" as={NavLink} to='/category/Anime' />
-                <Button texto="manga" className="navbar-button" as={NavLink} to='category/Manga' />
+                <Button accion={()=>navegate(`/`)} texto="inicio" className="navbar-button" />
+                <Button accion={()=>navegate(`/category/Anime`)} texto="anime" className="navbar-button" />
+                <Button accion={()=>navegate(`/category/Manga`)} texto="manga" className="navbar-button"/>
                 <Button texto="contacto" className="navbar-button" accion={() => console.log("Clickeaste Contacto")} />
             </div>
             <div className='cart'>

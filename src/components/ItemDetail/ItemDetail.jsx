@@ -2,17 +2,17 @@ import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 
 
-const ItemDetail = ({ products }) => {
+const ItemDetail = ({ product }) => {
   const onAdd = (cantidad) => {
     console.log(`Compraste ${cantidad} items`);
   };
   return (
     <div className='item-detail-box'>
-      <h2 className='name-product'>{products.name}</h2>
-      <img src={products.img} alt={products.name} className='img-product' />
-      <p>{products.description}</p>
-      <p>${products.price}</p>
-      <ItemCount initial={1} stock={products.stock} onAdd={onAdd} />
+      <h2 className='name-product'>{product.name}</h2>
+      <img src={product.img} alt={product.name} className='img-product' />
+      <p>{product.description}</p>
+      <p>${product.price}</p>
+      <ItemCount initial={1} stock={product.stock} onAdd={onAdd} />
     </div>
   );
 };
