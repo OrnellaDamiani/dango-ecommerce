@@ -7,7 +7,7 @@ const Navbar = () => {
     const navegate = useNavigate ()
     return (
         <body>
-            <header class="header">
+            <header className="header">
             <div className='logo' onClick={()=>navegate(`/`)}>
                 <img src='src/img/logo.png' />
             </div>
