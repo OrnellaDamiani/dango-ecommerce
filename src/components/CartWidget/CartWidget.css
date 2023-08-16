@@ -23,13 +23,13 @@
     transform: scale(1.2);
 }
 
-p:hover {
+.cart-number:hover {
     background-color:#EEB7D1;
     color: #CB7287;
     transform: scale(1.1);
 }
 
-p {
+.cart-number {
     display: inline-block;
     color: #52600A;
     font-weight: 700;

@@ -20,7 +20,7 @@ const products = [
     {
         id: '03',
         name: 'Fire Force Coleccion',
-        description: 'Collecion de tomos del manga Fire Force, la coleccion trae 5 mangas (consultar nro de tomos)',
+        description: 'Collecion de tomos Fire Force (5 mangas)',
         price: 12000,
         stock: 300,
         category: 'Manga',
@@ -57,7 +57,7 @@ const products = [
     {
         id: '07',
         name: 'MYA manga',
-        description: 'Tomo de My Hero Academy (consulta stock del numero de tomo)',
+        description: 'Tomo de My Hero Academy (1 manga)',
         price: 2500,
         stock: 200,
         category: 'Manga',

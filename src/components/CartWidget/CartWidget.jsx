@@ -3,7 +3,7 @@ const CartWidget = () => {
         <div className="cart-widget">
             <img src="src/img/cart2.png" />
             <div>
-                <p>3</p>
+                <p className="cart-number">3</p>
             </div>
         </div>
 

@@ -27,4 +27,3 @@ export default ItemDetailContainer;
 
 
 
-//.find((products) => products.id === id

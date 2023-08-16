@@ -1,0 +1,54 @@
+.btn-restar {
+    border: none;
+    color: #CB7287;
+    background: #EEB7D1;
+    text-decoration: none;
+    appearance: inherit;
+    border-radius: 4px;
+    padding: 3px 12px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #D1A481;
+    margin-right:15px;
+}
+
+.btn-sumar {
+    border: none;
+    color: #CB7287;
+    background: #EEB7D1;
+    text-decoration: none;
+    appearance: inherit;
+    border-radius: 4px;
+    padding: 3px 10px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #D1A481;
+    margin-left: 15px;
+}
+
+span {
+    color: #EFE4DC;
+}
+
+
+.btn-comprar {
+    border: none;
+    color: #CB7287;
+    background:#EEB7D1 ;
+    text-decoration: none;
+    appearance: inherit;
+    border-radius: 4px;
+    padding: 5px 15px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #D1A481;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-comprar:hover{
+    transform: scale(1.2);
+}

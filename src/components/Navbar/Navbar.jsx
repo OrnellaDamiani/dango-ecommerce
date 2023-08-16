@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Button accion={()=>navegate(`/`)} texto="inicio" className="navbar-button" />
                 <Button accion={()=>navegate(`/category/Anime`)} texto="anime" className="navbar-button" />
                 <Button accion={()=>navegate(`/category/Manga`)} texto="manga" className="navbar-button"/>
-                <Button texto="contacto" className="navbar-button" accion={() => console.log("Clickeaste Contacto")} />
+                <Button texto="nosotros" className="navbar-button" accion={() =>navegate(`/nosotros`)} />
             </div>
             <div className='cart'>
                 <CartWidget />
