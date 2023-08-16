@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ItemDetail = ({ product }) => {
   const [quantityAdded, setQuantityAdded]= useState ('')
   const onAdd = (cantidad) => {
-    console.log(`Compraste ${cantidad} items`);
+    
     setQuantityAdded (true)
   };
   console.log(quantityAdded);
