@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../Context/CartContext';
 
 
 const ItemDetail = ({ product }) => {
   const [quantityAdded, setQuantityAdded]= useState ('')
-  const onAdd = (cantidad) => {
+  const {addItem} = useContext(CartContext)
+  
+  const onAdd = (quantity) => {
     
-    setQuantityAdded (true)
+    setQuantityAdded (quantity)
+    addItem(product, quantity)
   };
-  console.log(quantityAdded);
+  
   return (
     <div className='item-detail-box'>
-      <h2 className='name-product'>{product.name}</h2>
+      <h2 className='name-product'>Detalle de: {product.name}</h2>
       <img src={product.img} alt={product.name} className='img-product' />
       <p>{product.description}</p>
       <p>${product.price}</p>

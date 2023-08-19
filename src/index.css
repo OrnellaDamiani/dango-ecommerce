@@ -6,7 +6,8 @@
 @import "./components/ItemDetail/ItemDetail.css";
 @import "./components/ItemCount/ItemCount.css";
 @import "./components/AboutUs/AboutUs.css";
-
+@import "./components/Cart/Cart.css";
+@import "./components/CartItem/CartItem.css";
 body {
   margin: 0;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button'
 import CartWidget from '../CartWidget/CartWidget';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const navegate = useNavigate ()
@@ -19,7 +19,8 @@ const Navbar = () => {
                 <Button texto="nosotros" className="navbar-button" accion={() =>navegate(`/nosotros`)} />
             </div>
             <div className='cart'>
-                <CartWidget />
+                <NavLink to='/cart'><CartWidget/></NavLink>
+                
             </div>
         </nav>
         </header>

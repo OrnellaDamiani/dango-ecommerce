@@ -1,9 +1,13 @@
+import { useContext, useState } from "react";
+import { CartContext } from "../../Context/CartContext";
+
 const CartWidget = () => {
+    const {cartQuantity} = useContext(CartContext)
     return (
         <div className="cart-widget">
             <img src="src/img/cart2.png" />
             <div>
-                <p className="cart-number">3</p>
+              { cartQuantity() > 0 && <p className="cart-number">{cartQuantity()}</p>}
             </div>
         </div>
 
