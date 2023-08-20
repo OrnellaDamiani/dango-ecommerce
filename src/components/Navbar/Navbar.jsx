@@ -9,7 +9,7 @@ const Navbar = () => {
         <body>
             <header className="header">
             <div className='logo' onClick={()=>navegate(`/`)}>
-                <img src='src/img/logo.png' />
+                <img src="https://i.postimg.cc/7hvxn4bN/logo.png" />
             </div>
         <nav className='navbar'>
             <div className='menu'>
