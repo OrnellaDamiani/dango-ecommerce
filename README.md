@@ -1,1 +1,5 @@
-"# dango-ecommerce" 
+"Bienvenid@ Dango-Ecommerce es una app hecha y pensada para amantes del anime o, quizas, para quienes comienzan en este mundo friki.
+Fue pensanda para que vos mismo puedas elegir lo que mas te gusta, en el navbar vas a poder ver que tambien esta dividido en dos categorias: Anime y Manga, por si preferis filtar los productos, sino en el inicio aprecen todos. Somos nuevos en este rubro, pero todos los productos que ves son 100% originales, no dudes en consultarnos, encontras nuestras redes en la seccion de 'Nosotros'. 
+Para finalizar, en cada producto tenes la descripciom, el stock, precio y toda la info. Podes elegir la cantidad y agregar al carrito cuanto producto desees, tambien podes editar el carrito, es decir, eliminar productos o limpiarlo por completo con el boton 'Vaciar Carrito'.
+Una vez finalizada la compra no olvides poner bien tus datos, nosotros te contactamos via mail para generar el pago de compra, anotate bien el numero de orden por cualquier consulta que necesites hacer.
+Eso es todo, espero que te guste esta pagina y que vuelvas pronto. Adios!"
