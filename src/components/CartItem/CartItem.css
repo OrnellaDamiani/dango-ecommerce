@@ -2,15 +2,22 @@
 
 .item-contendor {
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      align-items: center;
-     margin-left: 10%;
-    }
+     flex-direction: row;
+     max-width: 150%;
+}
 
 .img-item{
-    width: 150px;
+    max-width:auto;
+    max-height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
     margin-top: 3%;
 }
+
 
 .item-text{
     color: #52600A;

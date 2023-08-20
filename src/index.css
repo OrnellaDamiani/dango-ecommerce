@@ -8,6 +8,7 @@
 @import "./components/AboutUs/AboutUs.css";
 @import "./components/Cart/Cart.css";
 @import "./components/CartItem/CartItem.css";
+@import "./components/Checkout/Checkout.css";
 body {
   margin: 0;
 }

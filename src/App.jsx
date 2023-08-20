@@ -6,7 +6,12 @@ import AboutUs from './components/AboutUs/AboutUs'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from './Context/CartContext'
 import Cart from './components/Cart/Cart'
+import React, { useEffect } from 'react'
+import Checkout from './components/Checkout/Checkout'
+
+
 function App() {
+
   return (
     <CartProvider>
       <BrowserRouter>
@@ -17,6 +22,7 @@ function App() {
      <Route path='/item/:id' element={<ItemDetailContainer/>}/>
      <Route path='/nosotros' element={<AboutUs/>}/>
      <Route path='/cart' element={<Cart/>}/>
+     <Route path='/checkout' element={<Checkout/>}/>
      </Routes>
     </BrowserRouter>
     </CartProvider>

@@ -6,7 +6,7 @@
 }
 
 
-.totalprice-text{
+.totalprice-text {
     color: #52600A;
     font-size: 20px;
     margin-top: 5%;
@@ -17,7 +17,7 @@
 .btn-backtomain {
     border: none;
     color: #CB7287;
-    background:#EEB7D1 ;
+    background: #EEB7D1;
     text-decoration: none;
     appearance: inherit;
     border-radius: 4px;
@@ -41,23 +41,23 @@
 .btn-cleancart {
     border: none;
     color: #CB7287;
-    background:#EEB7D1 ;
+    background: #EEB7D1;
     text-decoration: none;
     appearance: inherit;
     border-radius: 4px;
     padding: 5px 15px;
     margin: 5px;
-    display:inline-block;
+    display: inline-block;
     text-align: center;
     border: 1px solid #D1A481;
     transition: all 0.3s;
-    cursor: pointer; 
+    cursor: pointer;
     justify-content: flex-start;
     margin-left: 80%;
-  
+
 }
 
-.btn-cleancart:hover{
+.btn-cleancart:hover {
     transform: scale(1.2);
 }
 
@@ -65,7 +65,7 @@
 .btn-completeorder {
     border: none;
     color: #52600A;
-    background:#D3D596 ;
+    background: #D3D596;
     text-decoration: none;
     appearance: inherit;
     border-radius: 4px;
@@ -79,21 +79,22 @@
     justify-content: flex-start;
 }
 
-.btn-completeorder:hover{
+.btn-completeorder:hover {
     transform: scale(1.2);
 }
 
-.item-bar{
+.item-bar {
 
-   
+
     display: flex;
-    justify-content: space-around;
-max-width: 70%;
-margin-left: 15%;
-    
-  }
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+   max-width: 85%;
+   margin-left: 11%;
+}
 
-  .text-bar{
+.text-bar {
     color: #52600A;
     font-size: 17px;
 }

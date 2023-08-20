@@ -2,39 +2,43 @@ import React, { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
 import { getProducts } from '../../mock/data';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { db } from '../../services/firebase';
 
 
 const ItemListContainer = ({ greeting }) => {
   const [productsList, setProductsList] = useState([]);
-  const [loading, setLoading]= useState ([])
-  const {categoryId}= useParams()
+  const [loading, setLoading] = useState([])
+  const { categoryId } = useParams()
 
   useEffect(() => {
-    setLoading (true)
-    getProducts()
+    setLoading(true)
+    const productsCollection = categoryId ? query(collection(db, "products"), where("category", "==", categoryId)):  collection(db, "products")
+    getDocs(productsCollection)
       .then((res) => {
-        if(categoryId){
-          setProductsList(res.filter((item)=> item.category === categoryId))
+        const list = res.docs.map((product) => {
+          return {
+            id: product.id,
+            ...product.data()
+          }
 
-        } else {
-          setProductsList(res)
-        }
-      } )
-
+        })
+        setProductsList(list)
+      })
       .catch((error) => console.log(error))
-      .finally (()=> setLoading(false))
-  },[categoryId])
+      .finally(() => setLoading(false))
+  }, [categoryId])
 
   return (
-   <div>
+    <div>
       {
         loading ? <p className='loading-text'>Cargando....</p>
-        : <div>
-        <h2 className='item-list-container'>{greeting}<span>{categoryId && categoryId}</span></h2>
-        <ItemList productsList={productsList} />
-      </div>
+          : <div>
+            <h2 className='item-list-container'>{greeting}<span>{categoryId && categoryId}</span></h2>
+            <ItemList productsList={productsList} />
+          </div>
       }
-   </div>
+    </div>
   );
 };
 

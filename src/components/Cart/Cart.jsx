@@ -8,24 +8,24 @@ const Cart = () => {
     const { cart, clear, total } = useContext(CartContext)
     return (
         <div>
-            <div>
-                <ul className='item-bar'>
-                    <p className='text-bar'>Imagen</p>
+            
+            {cart.length
+                ? 
+                    <div>
+                    <ul className='item-bar'>
+                    <p className='text-bar'></p>
                     <p className='text-bar'>Nombre</p>
                     <p className='text-bar'>Precio</p>
                     <p className='text-bar'>Cantidad</p>
                     <p className='text-bar'>Subtotal</p>
-                  
-                </ul>
-            </div>
+                    <p></p>
+                    </ul>
 
-            {cart.length
-                ? <div>
                     {cart.map((item) => <CartItem key={item.id} item={item} />)}
                     <p className="totalprice-text">Total a pagar ${total()}</p>
                     <div>
                         <button onClick={clear} className="btn-cleancart">Vaciar carrito</button>
-                        <Link className="btn-completeorder">Finalizar compra</Link>
+                        <Link className="btn-completeorder" to='/checkout'>Finalizar compra</Link>
 
                     </div>
                 </div>
