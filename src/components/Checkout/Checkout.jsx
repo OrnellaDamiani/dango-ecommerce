@@ -52,7 +52,7 @@ const Checkout = () => {
 
                     <div className="contenedor">
                         <div className="imagen">
-                            <img src="https://i.postimg.cc/7hvxn4bN/logo.png" alt='logo de la marca'></img>
+                            <img src="https://i.postimg.cc/7hvxn4bN/logo.png" alt='logo de la marca'/>
                         </div>
                         <div>
                             <form className="form" onSubmit={finishPurchase}>
