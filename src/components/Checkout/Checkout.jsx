@@ -42,8 +42,8 @@ const Checkout = () => {
         <div>
             {orderId !== ''
                 ? <div className="finishorder-container">
-                    <h2 className="finish-order">Felicitaciones tu orden se genero con exito</h2>
-                    <h5 className="order-id">Su numero de orden es: {orderId}</h5>
+                    <h2 className="finish-order">¡Felicitaciones tu orden se genero con exito!</h2>
+                    <h5 className="order-id">Su numero de orden es: {orderId} te mandaremos un mail pronto.</h5>
                     <Link to='/' className="btn-backmain">Volver al inicio</Link>
                 </div>
                 : <div className="body">
